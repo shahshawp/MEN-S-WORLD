@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>MEN'S VIBE</title>
+        <meta charset="utf-8"/>
+        <meta name="author" content="group"/>
+        <meta name="viewport" content="width=device-width"/>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/responsive.css" media="screen and (max-width: 1024px)"/>
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
+		<script src="script/responsivemenu.js"></script>
+        <script src="script/showdate.js"></script>
+        <script src="script/validate.js"></script>
+    </head>
+    <body>
+        <!--Header-->
+        <header>
+        <div class="wrapper clearfix">
+        <div class="headercol1">
+        <a href="index.html">
+        </a>
+        <div id="menuicon" onclick="showMenu()">
+        <img src="images/menuicon.png" alt="menu"/>
+        </div>
+        </div>
+           <div class="wrapper clearfix">
+        <div class="headercol1">
+        <a href="index.html">
+        <img id="logo" src="images/mvlogo.png" alt="logo"/>
+        </a>
+        
+        
+        <div id="menuicon" onclick="showMenu()">
+        <img src="images/menuicon.png" alt="menu"/>
+        </div>
+        </div>
+        <div class="headercol2">
+        
+        <nav id="nav">
+        <a href="product1.html">ARMANI</a>
+        <a href="product2.html">RALPH LOUREN</a>
+        <a href="product3.html">GUCCI</a>
+       <a href="#">ENQUIRY</a>
+        <a href="aboutme1.html">PROFILE</a>
+        <a href="enhancements.html">ENHANCEMENT</a>
+        <a href="disclaimer.html">DISCLAIMER</a>
+        </nav>
+        <nav id="nav2">
+        <a href="product1.html">ARMANI</a>
+        <a href="product2.html">RALPH LOUREN</a>
+        <a href="product3.html">GUCCI</a>
+        <a href="#">ENQUIRY</a>
+        <a href="aboutme1.html">PROFILE</a>
+        <a href="enhancements.html">ENHANCEMENT</a>
+        <a href="disclaimer.html">DISCLAIMER</a>
+        </nav>
+        </div>
+        </div>
+        <header>
+        <!--EnquiryForm-->
+        <section class="enquirysection">
+        <div class="wrapper clearfix">
+        <form action="preview.php" name="myForm" id="myForm" method="post">
+        <h1>Enquiry</h1>
+        <p> 
+        <label for="first_name">First Name</label>
+        <input id="first_name" name="first_name" type="text" />
+        </p>
+        <p id="first_name_msg"></p>
+        <p> 
+        <label for="last_name">Last Name</label>
+        <input id="last_name" name="last_name" type="text"/>
+        </p>
+        <p id="last_name_msg"></p>
+		<p> 
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email"/>
+        </p>
+        <p id="email_msg"></p>
+								
+		<!-- fieldset -->
+		<fieldset>
+		<legend>Address</legend>
+		<label for="street_address">Street Address</label>
+		<input id="street_address" name="street_address" type="text"/>
+		<p id="street_address_msg"></p>
+		<label for="city">City / Town</label>
+		<input id="city" name="city" type="text"/>
+		<p id="city_msg"></p>
+        <label for="state">Division</label>
+		<select name="state" id="state">
+		<option selected="selected" value="" disabled="disabled">Please select</option>
+		<option value="DHAKA">DHAKA</option>
+		<option value="RAJSHAHI">RAJSHAHI</option>
+		<option value="RANGPUR">RANGPUR</option>
+		<option value="SYLHET">SYLHET</option>
+		<option value="BARISAL">BARISAL</option>
+		<option value="CHITTAGONG">CHITTAGONG</option>
+		<option value="KHULNA">KHULNA</option>
+		<option value="MYMENSINGH">MYMENSINGH</option>
+		</select>
+        <p id="state_msg"></p>
+		<label for="post_code">Postcode</label>
+		<input id="post_code" name="post_code" type="text"/>
+		<p id="post_code_msg"></p>
+		</fieldset>
+									
+		<p> 
+        <label for="phone_number">Phone Number</label>
+        <input id="phone_number" name="phone_number" type="tel" placeholder="tel exclude symbol ' - ' "/>
+        </p>
+        <p id="phone_number_msg"></p>
+        <p>
+		<label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" />
+		</p>
+		<p> 
+        <label for="product">Product</label>
+        <select name= "product" id="product" required="required">
+		<option value="" selected="selected" disabled="disabled">Please select</option>
+		<option value="ARMANI" disabled="disabled">ARMANI</option>
+        <option value="ARMANI_EXCHANGE">ARMANI_EXCHANGE</option>
+        <option value="ARMANI WATCHESa">ARMANI WATCHES</option>
+        <option value="ARMANI SUITSARMANI LEATHER JACKETSARMANI LEATHER JACKETS">ARMANI SUITS</option>
+        <option value="ARMANI LEATHER JACKETS">ARMANI LEATHER JACKETS</option>
+		<option value="RALPH LOUREN" disabled="disabled">RALPH LOUREN</option>
+        <option value="RALPH LOUREN">POLO RALPH LOUREN</option>
+		<option value="RALPH LOUREN">RALPH LOUREN WATCHES</option>
+        <option value="RALPH LOUREN">RALPH LOUREN CASUAL JACKETS</option>
+        <option value="RALPH LOUREN">RALPH LOUREN LEATHER JACKETS</option>
+		<option value="GUCCI" disabled="disabled">GUCCI</option>
+		 <option value="GUCCI">GUCCI T-SHIRT</option>
+        <option value="GUCCI">GUCCI WATCHES</option>
+        <option value="GUCCI">GUCCI HANDMADE SUITS</option>
+        <option value="GUCCI">GUCCI WALLETS</option>
+		</select>
+        </p>
+        <p id="product_msg"></p>
+		<p> 
+        <label for="comment">Comment</label>
+		<textarea name="comment" id="comment" required="required">Write your comments here.</textarea>
+		</p>
+        <!-- button -->
+        <p> 
+        <button type="submit" value="Submit" class="button">Submit</button> 
+		</p>
+        </form>
+        </div>
+        </section>
+     <!--footer-->
+        <footer>
+        <div class="wrapper clearfix">
+        <p id="footertitle"><strong>Designed by</strong></p>
+        <div class="footercol">
+        <a href="aboutme1.html">PRIO</a>
+        </div>
+        <div class="footercol">
+        <a href="aboutme2.html">RIMA</a>
+        </div>
+        </div>
+        <p id="datetime"></p>
+        </footer>    
+    </body>
+</html>

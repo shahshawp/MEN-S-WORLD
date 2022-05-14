@@ -1,0 +1,422 @@
+
+body{
+
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+    padding:0;
+}
+table, th, td, tr{
+    border:2px solid #333333;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.clearfix:before,.clearfix:after{
+    content:"";
+    display: table;
+    
+}
+.clearfix:after{
+    clear:both;
+}
+.wrapper{
+    margin:0 auto;
+    max-width: 1100px;
+    
+}
+#datetime{
+    margin-top:10px;
+}
+/*For Header*/
+header{
+background-image: url(images/gray.jpg);
+    padding:13px 20px;
+    background-color:#fff;
+    /*-webkit-box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.75);*/
+    box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.75);
+    
+}
+#logo{
+    width:80px;
+    height: 80px;
+}
+div.headercol1{
+    width:15%;
+    float:left;
+}
+
+div.headercol1 a{
+    text-decoration:none;
+    color:#222222;
+}
+
+div.headercol2{
+    width:85%;
+    float:left;
+    padding:30px 0px;
+}
+/*For Navbar*/
+#menuicon{
+    display:none;
+}
+#menuicon img{
+    width:50px;
+    
+}
+nav{
+    padding:0;
+    float:right;
+    margin:0;
+}
+nav a:link,
+nav a:visited{
+    text-decoration: none;
+    color:#222222;
+    padding-bottom:2px;
+    margin:0px 7px;
+    font-family: Arial,sans-serif;
+
+    
+}
+#nav2{
+    display:none;
+}
+#nav2 a{
+    display:none;
+}
+nav a:hover{
+    border-bottom:2px solid #222222;
+}
+/*For Index Jumbotron*/
+section.jumbotron{
+    background-image: url(images/polo.jpg);
+    padding:250px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin-top:7px;
+    text-align: center;
+    
+}
+section.jumbotron h1{
+    font-size:2.5em;
+    color:white;
+    margin-bottom: 25px;
+}
+section.jumbotron a{
+    text-decoration: none;
+    padding:15px;
+    background-color:lightslategray;
+    color:white;
+}
+section.jumbotron a:hover{
+    background-color:#2980b9;
+}
+/*For Car Types*/
+article.content{
+    background-image:url(images/productbg.jpg);
+    padding:60px 0px;
+    text-align: center;
+}
+article.content h2{
+    font-size:2.2em;
+    margin-bottom: 50px;
+	color:black;
+}
+.contentcol{
+    float:left;
+    width:30%;
+    text-align: center;
+    padding:10px;
+    margin:5px;
+}
+.contentcol img{
+    width:300px;
+    height:160px;
+    
+}
+.contentcol a{
+    text-decoration: none;
+    color:black;
+}
+.contentcol a p{
+    font-size:1.5em;
+}
+
+/*Product*/
+.productsection{
+    background-image: url(images/grayy.png);
+    background-size: cover;
+    padding:30px 0px;
+    margin-top:5px;
+    text-align: center;
+}
+.productsection h1{
+	font-size: 55px;
+	color: 	#fff;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.productsection hr{
+    width:100%;
+}
+.productsection h2{
+    font-size:45px;
+    margin:30px 0px;
+    letter-spacing: 5px;
+    color:#fff;
+    text-shadow: 2px 2px 4px #000000;
+}
+.products{
+    max-width: 100%;
+    padding:30px;
+	margin:20px auto;
+    background-color: #AAAAAA;
+    border-radius: 10px;
+    
+    box-shadow: -1px 2px 28px -7px rgba(0,0,0,0.75);
+
+}
+.products:hover{
+    
+    box-shadow: -1px 3px 16px 3px rgba(0,0,0,0.75);
+}
+.productscol1{
+    width:69%;
+    float: left;
+}
+.productscol1 img{
+    width:500px;
+    height:280px;
+    display: inline-block;
+}
+.productscol2{
+    float: left;
+    width:31%;
+    text-align: left;
+}
+.productscol2 ul li{
+    font-size: 20px;
+}
+.productscol2 p{
+    font-size:1.1em;
+    text-align: left;
+}
+.productscol2 h3{
+    padding:10%;
+    text-align: center;
+    font-size: 30px;
+
+}
+/*For Profiles Page*/
+section.moreprofiles{
+    padding:50px 0px;
+    margin-top:5px;
+    text-align: center;
+    background-color: #f4f2f4;
+    
+}
+.profilebox{
+    float:left;
+    width:30%;
+    padding: 10% 0px;
+    margin:0px 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.profilebox:hover{
+    /*-webkit-filter: grayscale(100%);*/
+    filter: grayscale(100%);
+    /*-webkit-transition: all 520ms ease-out;
+    -moz-transition: all 520ms ease-out;
+    -ms-transition: all 520ms ease-out;
+    -o-transition: all 520ms ease-out;*/
+    transition: all 520ms ease-out;
+}
+.profilebox h2{
+    font-size:2em;
+    color: white;
+    opacity: 0
+}
+
+.profilebox:hover h2{
+    opacity: 9;
+    /*-webkit-transition: all 520ms ease-out;
+    -moz-transition: all 520ms ease-out;
+    -ms-transition: all 520ms ease-out;
+    -o-transition: all 520ms ease-out;*/
+    transition: all 520ms ease-out;
+    
+}
+#prio{
+    background-image: url(images/prio2.jpg);    
+}
+#rima{
+    background-image: url(images/rima.jpg);    
+}
+
+
+
+.profiles{
+    padding:50px;
+    background-color: #f4f2f4;
+    
+}
+.profiles h1{
+    text-align: center;
+}
+.subcol{
+    margin:10px 0px;
+}
+.profilecol1{
+    width:27%;
+    float: left;
+    padding:30px 0px;
+    
+}
+.profilecol2{
+    width:65%;
+    float: left;
+    padding:30px 0px;
+    margin-left:20px;
+}
+
+.profiles h1{
+    font-size:200%;
+}
+.profiles h2{
+    text-align: right;
+}
+.profiles h3{
+    color:rgb(52, 152, 219);
+    text-align: right;
+}
+.profiles img{
+    border:5px groove ;
+    width:130px;
+    padding:20px;
+    float:right;
+}
+.profilecol2 ul li{
+    font-size:25px;
+}
+#profiletable{
+    margin:30px 0px;
+    width: 100%;
+}
+#profiletable th{
+    background-color: #3498db;
+    color:white;
+    padding: 10px;
+    
+}
+#profiletable td{
+    padding:10px 20px;
+}
+#profiletable tr{
+    background-color: #2c3e50;
+    color:#fff;
+}
+
+/*For Enquiry*/
+.enquirysection{
+    padding:40px 0px;
+    background-color: #f4f2f4;
+    margin-top: 5px;
+}
+.enquirysection .wrapper{
+    max-width: 400px;
+    padding:4%;
+    background-color: #F7F7F7; /* background color */
+	border: 1px solid #066A75;
+	/* Box shadow */
+	box-shadow: 0 0 15px rgba(105, 108, 109,  0.7);
+	border-radius: 5px;
+}
+.enquirysection h1{
+    text-align: center;
+    font-size: 48px;
+	color: #066A75;
+    margin-bottom: 30px;
+}
+.enquirysection label,legend{
+    font-size: 15px; 
+}
+.enquirysection input,select,textarea{
+    width: 92%;
+	margin-top: 4px;
+	padding: 10px 5px 10px 5px;	/* input text padding*/
+	border: 1px solid #B2B2B2;
+	border-radius: 5px;
+    
+}
+.enquirysection fieldset{
+	padding: 10px 0 15px 20px;
+	width: 90%;
+	border: 1px solid #B2B2B2;
+	border-radius: 5px;
+}
+.button{
+    background-color: rgb(41,127,184);
+	width: 100%;
+	padding: 10px 5px 0 5px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+}
+/*For Disclaimer*/
+.disclaimer{
+    padding:100px 0px;
+    margin-top: 5px;
+    background-color: #f4f2f4;
+}
+.disclaimer h2{
+    text-align: center;
+}
+.disclaimer ul li{
+    margin:20px 0px;
+}
+
+/*For Footer*/
+footer{
+  
+    padding:20px 0px;
+    text-align: center;
+    /*-webkit-box-shadow: -1px -5px 6px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -5px 6px -2px rgba(0,0,0,0.75);*/
+    box-shadow: -1px -5px 6px -2px rgba(0,0,0,0.75);
+}
+#footertitle{
+    font-size:20px;
+    margin-bottom: 15px;
+}
+.footercol{
+    width:50%;
+    float:left;
+}
+.footercol a:link,
+.footercol a:visited{
+    text-decoration: none;
+    color:black;
+}
+
+/*For Enhancements*/
+.enhancements{
+    padding:60px 0px;
+    margin-top: 5px;
+    text-align: center;
+    background-color: #f4f2f4;
+}
+.enhancements h1{
+    margin-bottom: 10px;
+}
+.enhancements table td{
+    text-align: left;
+    padding:10px 30px;
+}
